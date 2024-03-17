@@ -131,11 +131,8 @@ end, { desc = "[C]heck, [S]pelling suggestions" })
 map("n", "<leader>so", ":SymbolsOutline<cr>")
 
 -- Insert --
--- Map double base movement to <esc>
+-- Map jj to <esc>
 map("i", "jj", "<esc>")
-map("i", "kk", "<esc>")
-map("i", "hh", "<esc>")
-map("i", "ll", "<esc>")
 
 -- Visual --
 -- Disable Space bar since it'll be used as the leader key
