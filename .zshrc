@@ -125,6 +125,9 @@ alias rr='ranger'
 # Configure FZF.
 alias fp="fzf --preview 'bat --style=numbers --color=always {}'"
 alias repos="cd ~/repositories"
+alias vn="cd ~/Notes/Notes/ && l; nvim ."
+alias notes="~/Notes/Notes/"
+alias vnotes="cd ~/Notes/Notes/ && l; nvim ."
 bindkey '^ ' autosuggest-accept
 
 alias vim='nvim'
@@ -132,6 +135,7 @@ eval "$(fzf --zsh)"
 # navigation
 cx() { cd "$@" && l; }
 fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }
+fdv() { cd "$(find . -type d -not -path '*/.*' | fzf)"  && l; nvim . }
 f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }
 fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
 
