@@ -126,7 +126,7 @@ alias rr='ranger'
 alias fp="fzf --preview 'bat --style=numbers --color=always {}'"
 alias repos="cd ~/repositories"
 alias vn="cd ~/Notes/Notes/ && l; nvim ."
-alias notes="~/Notes/Notes/"
+alias notes="cd ~/Notes/Notes/"
 alias vnotes="cd ~/Notes/Notes/ && l; nvim ."
 bindkey '^ ' autosuggest-accept
 
