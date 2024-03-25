@@ -171,3 +171,18 @@ map("t", "<space>", "<space>")
 
 -- Markdown preview toggle
 map("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<cr>", "[M]arkdown [P]review")
+
+-- Editing
+-- Surrounding words
+vim.keymap.set("n", '<leader>s"', 'ciw""<Esc>P', { desc = '[S]urround "Quotes"' })
+vim.keymap.set("n", "<leader>s'", "ciw''<Esc>P", { desc = "[S]urround 'Apostrophe'" })
+vim.keymap.set("n", "<leader>s[", "ciw[]<Esc>P", { desc = "[S]urround [Square Bracket]" })
+vim.keymap.set("n", "<leader>s{", "ciw{}<Esc>P", { desc = "[S]urround {Curly Bracket}" })
+vim.keymap.set("n", "<leader>s(", "ciw()<Esc>P", { desc = "[S]urround (Parenthesis)" })
+
+-- Surrounding selections
+vim.keymap.set("v", 'ms"', 'c""<Esc>P', { desc = '[M]ode [S]urround "Quotes"' })
+vim.keymap.set("v", "ms'", "c''<Esc>P", { desc = "[M]ode [S]urround 'Apostrophe'" })
+vim.keymap.set("v", "ms[", "c[]<Esc>P", { desc = "[M]ode [S]urround [Square Bracket]" })
+vim.keymap.set("v", "ms{", "c{}<Esc>P", { desc = "[M]ode [S]urround {Curly Bracket}" })
+vim.keymap.set("v", "ms(", "c()<Esc>P", { desc = "[M]ode [S]urround (Parenthesis)" })

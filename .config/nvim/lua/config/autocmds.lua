@@ -45,3 +45,25 @@ vim.api.nvim_create_user_command("RotateWindows", function()
     vim.api.nvim_err_writeln("You can only swap 2 open windows. Found " .. num_eligible_windows .. ".")
   end
 end, {})
+
+-- Disable completion on markdown files by default
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "gitcommit", "markdown" },
+  callback = function()
+    require("cmp").setup({ enabled = false })
+  end,
+})
+
+-- Wrap and check for spell in text filetypes
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "gitcommit", "markdown", "pandoc" },
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.spell = false
+  end,
+})
+
+vim.api.nvim_create_autocmd("filetype", {
+  pattern = { "gitcommit", "markdown", "pandoc" },
+  command = "set nospell",
+})
