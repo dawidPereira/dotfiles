@@ -45,6 +45,11 @@ alias gcoall='git checkout -- .'
 alias gr='git remote'
 alias gre='git reset'
 
+# Config
+alias cc="config commit -m"
+alias cs="config status"
+alias ca="config add"
+
 # Docker
 alias dco="docker compose"
 alias dps="docker ps"

@@ -113,3 +113,6 @@ map <leader>se <Action>(SearchEverywhere)
 map <leader>sa <Action>(GotoAction)
 map <leader>ff <Action>(GotoFile)
 map <leader>/ <Action>(FindInPath)
+
+map <C-l> <Action>(NextSplitter)
+map <C-h> <Action>(PrevSplitter)
