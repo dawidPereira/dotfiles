@@ -109,6 +109,8 @@ map # #zz
 map ]d <Action>(GotoNextError)
 map [d <Action>(GotoPreviousError)
 
+map <leader>qi <Action>(QuickImplementations)
+
 map <leader>se <Action>(SearchEverywhere)
 map <leader>sa <Action>(GotoAction)
 map <leader>ff <Action>(GotoFile)
@@ -116,3 +118,6 @@ map <leader>/ <Action>(FindInPath)
 
 map <C-l> <Action>(NextSplitter)
 map <C-h> <Action>(PrevSplitter)
+
+map <Leader>pf <action>(com.mituuz.fuzzier.Fuzzier)
+map <Leader>mf <action>(com.mituuz.fuzzier.FuzzyMover)
