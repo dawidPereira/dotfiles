@@ -99,6 +99,7 @@ map("n", "<leader>cc", ":cclose<cr>zz")
 -- Map MaximizerToggle (szw/vim-maximizer) to leader-m
 map("n", "<leader>M", ":MaximizerToggle<cr>", "[M]aximize window")
 map("n", "<leader>vs", ":vsplit<cr>", "[V]ertical [S]plit")
+map("n", "<leader>%", ":vsplit<cr>", "[V]ertical [S]plit")
 map("n", "<leader>hs", ":split<cr>", "[H]orizonta [S]plit")
 
 -- Resize split windows to be equal size
