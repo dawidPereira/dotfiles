@@ -1,0 +1,115 @@
+intellimacs/major.vim
+source ~/.intellimacs/hybrid.vim
+
+" (Optional) Enable which-key plugin
+source ~/.intellimacs/which-key.vim
+let mapleader = " "
+nmap <leader>ns :next<CR>
+nmap <leader>ps :prev<CR>
+
+" (Optional) My own vim commands
+nnoremap Y y$
+
+" (Optional) Comma for major mode
+nmap , <leader>m
+vmap , <leader>m
+
+" (Optional) Add/edit actions
+nnoremap <leader>gl    :action Vcs.Show.Log<CR>
+vnoremap <leader>gl    :action Vcs.Show.Log<CR>
+
+let g:EasyMotion_override_acejump = 0
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+set which-key
+set notimeout
+set scrolloff=5
+set quickscope
+
+
+
+" Do incremental searching.
+set incsearch
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+set easymotion
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+Paplug 'justinmk/vim-sneak'
+PluG 'easymotion/vim-easymotion'
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"Map leader>d <Action>(Debug)
+
+Map \b to toggle the breakpoint on the current line
+map \b <Action>(ToggleLineBreakpoint)
+map <leader>% <Action>(MoveTabRight)
+map <leader>us <Action>(Unsplit)
+map <leader>xy <Action>(CloseAllEditors)
+map <leader>gc <Action>(CommentByLineComment)
+map <leader>rr <Action>(RenameElement)
+nnoremap U <C-r>
+
+
+"Windows navigation
+map <leader>ee <Action>(ActivateProjectToolWindow)
+map <leader>ce <Action>(ActivateCommitToolWindow)
+map <leader>gg <Action>(ActivateVersionControlToolWindow)
+map <leader>re <Action>(ActivateRunToolWindow)
+map <leader>de <Action>(ActivateDebugToolWindow)
+
+" Surrounding
+
+map <leader>s" ciw""<Esc>P
+map <leader>s' ciw''<Esc>P
+map <leader>s[ ciw[]<Esc>P
+map <leader>s{ ciw{}<Esc>P
+map <leader>s( ciw()<Esc>P
+
+
+map ms" c""<Esc>P
+map ms' c''<Esc>P
+map ms[ c[]<Esc>P
+map ms{ c{}<Esc>P
+map ms( c()<Esc>P
+
+" AceJump
+map s <Action>(AceWordStartAction)
+
+" EasyMotion
+imap jj <Esc>
+
+" Navigation
+-- Center buffer while navigating
+map <C-u> <C-u>zz
+map <C-u> <C-u>zz
+map <C-d> <C-d>zz
+map { {zz
+map } }zz
+map N nzz
+map n nzz
+map G Gzz
+map gg ggzz
+map <C-i> C-i>zz
+map <C-o> <C-o>zz
+map % %zz
+map * *zz
+map # #zz
+
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
+
+map <leader>se <Action>(SearchEverywhere)
+map <leader>sa <Action>(GotoAction)
+map <leader>ff <Action>(GotoFile)
+map <leader>/ <Action>(FindInPath)
