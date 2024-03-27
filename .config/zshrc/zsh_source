@@ -1,0 +1,23 @@
+if [ -f ~/.config/zshrc/zsh_exports_aliases ]; then
+    source ~/.config/zshrc/zsh_exports_aliases
+fi
+
+if [ -f ~/.config/zshrc/zsh_aliases ]; then
+    source ~/.config/zshrc/zsh_aliases
+fi
+
+if [ -f ~/.config/zshrc/zsh_containers_aliases ]; then
+    source ~/.config/zshrc/zsh_containers_aliases
+fi
+
+if [ -f ~/.config/zshrc/zsh_git_aliases ]; then
+    source ~/.config/zshrc/zsh_git_aliases
+fi
+
+if [ -f ~/.config/zshrc/zsh_plugins_aliases ]; then
+    source ~/.config/zshrc/zsh_plugins_aliases
+fi
+
+if [ -f ~/.config/zshrc/zsh_folders_aliases ]; then
+    source ~/.config/zshrc/zsh_folders_aliases
+fi

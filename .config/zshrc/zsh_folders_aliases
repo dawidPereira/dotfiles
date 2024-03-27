@@ -1,0 +1,7 @@
+# Notes
+alias vnotes="cd ~/Notes/Notes/ && l; nvim ."
+alias vn="vnotes"
+alias notes="cd ~/Notes/Notes/"
+
+# Repositories
+alias repos="cd ~/repositories"

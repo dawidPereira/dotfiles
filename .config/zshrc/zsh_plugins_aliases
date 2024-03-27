@@ -1,0 +1,30 @@
+# HTTP requests with xh!
+alias http="xh"
+
+# FZF
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+# Configure FZF.
+alias fp="fzf --preview 'bat --style=numbers --color=always {}'"
+
+eval "$(fzf --zsh)"
+
+cx() { cd "$@" && l; }
+fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }
+fdv() { cd "$(find . -type d -not -path '*/.*' | fzf)"  && l; nvim . }
+f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }
+fv() { nvim "$(find . -type f -not -path '*/.*' | fzf)" }
+
+# Tmux
+alias tmux="tmux -f ~/.tmux.conf"
+alias t='tmux'
+alias e='exit'
+
+#Nvim
+alias vim='nvim'
+alias v="/opt/homebrew/bin/nvim"
+
+# VI Mode!!!
+bindkey jj vi-cmd-mode
