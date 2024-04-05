@@ -16,13 +16,36 @@ fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && l; }
 fdv() { cd "$(find . -type d -not -path '*/.*' | fzf)"  && l; nvim . }
 f() { echo "$(find . -type f -not -path '*/.*' | fzf)" | pbcopy }
 fv() { nvim "$(find . -type f -not -path '*/.*' | fzf --preview 'bat --style=numbers --color=always {}')" }
-fvn() {
+
+# Open notes in vim
+on() {
   cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes || return
   local file
   file=$(find . -type f -not -path '*/.*' | fzf --preview 'bat --style=numbers --color=always {}')
   [ -n "$file" ] && nvim "$file"
 }
+# Find notes and return the path
+fn() {
+    cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes || return
+    local file
+    file=$(find . -type f -not -path '*/.*' | fzf --preview 'bat --style=numbers --color=always {}')
+    [ -n "$file" ] && echo "$file"
+}
 
+# Open repositories in vim
+or() {
+  cd ~/Repositories/ || return
+  local file
+  file=$(find . -type f -not -path '*/.*' | fzf --preview 'bat --style=numbers --color=always {}')
+  [ -n "$file" ] && nvim "$file"
+}
+# Find repositories and return the path
+fr() {
+    cd ~/Repositories/ || return
+    local file
+    file=$(find . -type f -not -path '*/.*' | fzf --preview 'bat --style=numbers --color=always {}')
+    [ -n "$file" ] && echo "$file"
+}
 # Tmux
 alias tmux="tmux -f ~/.tmux.conf"
 alias t='tmux'
