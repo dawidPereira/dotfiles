@@ -113,13 +113,13 @@ expand-main:
 
 # Focus the next window in the list going counter-clockwise.
 focus-ccw:
-  mod: mod1
+  mod: mod2
   key: j
 
 # Focus the next window in the list going clockwise.
-#focus-cw:
-#  mod: mod1
-#  key: k
+focus-cw:
+  mod: mod2
+  key: k
 
 # Focus the main window in the list.
 focus-main:
@@ -128,7 +128,7 @@ focus-main:
 
 # Focus the next screen in the list going counter-clockwise.
 focus-screen-ccw:
-  mod: mod1
+  mod: mod2
   key: i
 
 # Focus the next screen in the list going clockwise.
@@ -137,9 +137,9 @@ focus-screen-ccw:
 #  key: k
 
 # Move the currently focused window onto the next screen in the list going counter-clockwise.
-swap-screen-ccw:
-  mod: mod2
-  key: k
+#swap-screen-ccw:
+#  mod: mod2
+#key: k
 
 # Move the currently focused window onto the next screen in the list going clockwise.
 #swap-screen-cw:
@@ -172,9 +172,45 @@ swap-main:
 #   mod: mod2
 #   key: u
 # Move the currently focused window to the n-th space; e.g., throw-space-3 will move the window to the 3rd space.
-# throw-space-<screen-number>:
-#   mod: mod2
-#   key: i
+throw-space-1:
+  mod: mod3
+  key: h
+
+throw-space-2:
+  mod: mod3
+  key: j
+
+throw-space-3:
+  mod: mod3
+  key: k
+
+throw-space-4:
+  mod: mod3
+  key: l
+
+throw-space-5:
+  mod: mod3
+  key: ;
+
+throw-space-6:
+  mod: mod3
+  key: y
+
+throw-space-7:
+  mod: mod3
+  key: u
+
+throw-space-8:
+  mod: mod3
+  key: i
+
+throw-space-9:
+  mod: mod3
+  key: o
+
+throw-space-10:
+  mod: mod3
+  key: p
 
 # Select tall layout
 select-tall-layout:
@@ -197,14 +233,14 @@ select-column-layout:
   key: f
 
 # Move the currently focused window to the space to the left.
-throw-space-left:
-  mod: mod3
-  key: h
+#throw-space-left:
+#  mod: mod3
+#key: h
 
 # Move currently the focused window to the space to the right.
-throw-space-right:
-  mod: mod3
-  key: l
+#throw-space-right:
+#mod: mod3
+#key: l
 
 # Toggle the floating state of the currently focused window; i.e., if it was floating make it tiled and if it was tiled make it floating.
 toggle-float:
@@ -212,9 +248,9 @@ toggle-float:
   key: t
 
 # Display the layout HUD with the current layout on each screen.
-display-current-layout:
-  mod: mod3
-  key: i
+#display-current-layout:
+#  mod: mod3
+#key: i
 
 # Turn on or off tiling entirely.
 toggle-tiling:
