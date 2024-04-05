@@ -1,3 +1,0 @@
-export LANG=en_US.UTF-8
-export EDITOR=/opt/homebrew/bin/nvim
-export PATH=/opt/homebrew/bin:$PATH
