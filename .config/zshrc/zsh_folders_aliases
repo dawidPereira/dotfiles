@@ -1,7 +1,8 @@
 # Notes
-alias vnotes="cd ~/Notes/Notes/ && l; nvim ."
-alias vn="vnotes"
-alias notes="cd ~/Notes/Notes/"
+
+alias vnotes="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes && l; nvim ."
+alias vn="vn"
+alias notes="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Notes"
 
 # Repositories
 alias repos="cd ~/repositories"

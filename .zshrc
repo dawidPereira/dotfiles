@@ -1,5 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 if [ -f ~/.config/zshrc/zsh_source ]; then
     source ~/.config/zshrc/zsh_source
 fi
