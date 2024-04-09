@@ -30,7 +30,7 @@ eval "$(tmuxifier init -)"
 #alias ls='colorls'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-alias config='/usr/bin/git --git-dir=/Users/dawidpereira/.dotfiles/ --work-tree=/Users/dawidpereira'
+alias config='/usr/bin/git --git-dir=/Users/$HOME/.dotfiles/ --work-tree=/Users/$HOME'
 # source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -70,3 +70,4 @@ eval $(thefuck --alias fk)
 eval "$(zoxide init zsh)"
 
 alias cd="z"
+alias config='/usr/bin/git --git-dir=/Users/$HOME/.dotfiles/ --work-tree=/Users/$HOME'
