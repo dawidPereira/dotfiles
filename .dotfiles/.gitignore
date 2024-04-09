@@ -1,3 +1,6 @@
 *.DS_Store
 lazy-lock.json
 .neoconf.json
+lazyvim.json
+*lazyvim.json
+
