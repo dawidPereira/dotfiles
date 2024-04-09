@@ -23,3 +23,4 @@ eval "$(tmuxifier init -)"
 #alias ls='colorls'
 alias config='/usr/bin/git --git-dir=/Users/dawid/.dotfiles/ --work-tree=/Users/dawid'
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+alias config='/usr/bin/git --git-dir=/Users/dawidpereira/.dotfiles/ --work-tree=/Users/dawidpereira'
