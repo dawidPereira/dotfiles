@@ -109,12 +109,14 @@ map # #zz
 map ]d <Action>(GotoNextError)
 map [d <Action>(GotoPreviousError)
 
-map <leader>qi <Action>(QuickImplementations)
+map qi <Action>(QuickImplementations)
 map gi <Action>(ReSharperGotoImplementation)
 
 map <leader>se <Action>(SearchEverywhere)
 map <leader>sa <Action>(GotoAction)
 map <leader>ff <Action>(GotoFile)
+map gu <Action>(FindUsages)
+
 map <leader>/ <Action>(FindInPath)
 
 
