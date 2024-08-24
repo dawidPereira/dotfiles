@@ -68,4 +68,5 @@ require("lazy").setup({
   },
 })
 
+vim.cmd.colorscheme("catppuccin")
 vim.cmd("highlight Visual ctermbg=0 guibg=#6441A5")

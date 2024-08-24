@@ -20,3 +20,4 @@ alias ll='ls -la'
 alias la='ls -lathr'
 
 alias cl='clear'
+alias fe='yazi'
