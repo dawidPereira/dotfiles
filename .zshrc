@@ -26,6 +26,8 @@ complete -C '/usr/local/bin/aws_completer' aws
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
 eval "$(tmuxifier init -)"
+alias tmux='tmux -f ~/.config/tmux/tmux.conf'
+
 
 #alias ls='colorls'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
