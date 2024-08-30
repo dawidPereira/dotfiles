@@ -28,7 +28,7 @@ return {
       Constructor = "",
       Field = "ﰠ",
       Variable = "",
-      Class = "\ueb5b",
+      Class = "",
       Interface = "",
       Module = "",
       Property = "ﰠ",
