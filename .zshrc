@@ -106,7 +106,8 @@ eval $(thefuck --alias fk)
 
 # ---- Zoxide (better cd) ----
 # # Shell integrations
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
+# eval "$(zoxide init --cmd cd zsh)"
 
 alias cd="z"
 alias config='/usr/bin/git --git-dir=/Users/$HOME/.dotfiles/ --work-tree=/Users/$HOME'
