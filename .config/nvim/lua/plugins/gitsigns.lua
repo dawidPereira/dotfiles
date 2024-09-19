@@ -6,13 +6,13 @@ return {
     },
     config = function()
       require("gitsigns").setup({
-        signs = {
-          add = { hl = "GitGutterAdd", text = "+" },
-          change = { hl = "GitGutterChange", text = "~" },
-          delete = { hl = "GitGutterDelete", text = "_" },
-          topdelete = { hl = "GitGutterDelete", text = "‾" },
-          changedelete = { hl = "GitGutterChange", text = "~" },
-        },
+        on_attach = function()
+          vim.api.nvim_set_hl(0, "GitSignsAdd", { link = "DiffAdd" })
+          vim.api.nvim_set_hl(0, "GitSignsChange", { link = "DiffChange" })
+          vim.api.nvim_set_hl(0, "GitSignsDelete", { link = "DiffDelete" })
+          vim.api.nvim_set_hl(0, "GitSignsTopdelete", { link = "DiffDelete" })
+          vim.api.nvim_set_hl(0, "GitSignsChangedelete", { link = "DiffChange" })
+        end,
       })
     end,
   },

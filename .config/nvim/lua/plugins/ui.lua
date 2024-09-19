@@ -2,8 +2,8 @@ return {
   {
     "lukas-reineke/virt-column.nvim",
     opts = {
-      char = { "|" },
-      virtcolumn = "+1,100",
+      char = { "│" },
+      virtcolumn = "+1,110",
       highlight = { "TroubleIndent" },
     },
   },
