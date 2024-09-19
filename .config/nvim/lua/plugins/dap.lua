@@ -24,4 +24,8 @@ return {
       virt_text_win_col = 80,
     },
   },
+  {
+    "Cliffback/netcoredbg-macOS-arm64.nvim",
+    dependencies = { "mfussenegger/nvim-dap" },
+  },
 }
