@@ -1,31 +1,11 @@
 return {
   {
-    "mfussenegger/nvim-dap",
-    keys = {
-      {
-        "<leader>dO",
-        function()
-          require("dap").step_out()
-        end,
-        desc = "Step Out",
-      },
-      {
-        "<leader>do",
-        function()
-          require("dap").step_over()
-        end,
-        desc = "Step Over",
-      },
-    },
-  },
-  {
-    "theHamsta/nvim-dap-virtual-text",
-    opts = {
-      virt_text_win_col = 80,
-    },
-  },
-  {
     "Cliffback/netcoredbg-macOS-arm64.nvim",
     dependencies = { "mfussenegger/nvim-dap" },
+
+    config = function()
+      local dap = require("dap")
+      require("netcoredbg-macOS-arm64").setup(dap)
+    end,
   },
 }
